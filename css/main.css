@@ -1,0 +1,196 @@
+.lang-en {
+    display: none;
+}
+/************* Slider *************/
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #111;
+    font-family: "Poppins", sans-serif;
+}
+
+.content {
+    display: inline-block;
+    width: 90%;
+    background: #111;
+}
+
+.content > .content-container {
+    width: 100%;
+    height: 100vh;
+    background: #111;
+}
+
+.content--center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    color: white;
+    column-gap: 5%;
+
+}
+
+#content_2, #content_3, #content_4, #content_5 {
+    width: 70%;
+    margin: 0 15%;
+}
+
+/************* Formatage *************/
+
+.content-container h1 {
+    grid-column: span 2;
+    font-size: 110px;
+    text-align: center;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: hsla(0, 0%, 100%, .07);
+}
+
+/************* Presentation *************/
+#content_1 {
+    background: linear-gradient(75deg, #ffb400 0%, #ffb400 25%, #ffb400 25%, #111 25%, #111 100%);
+    width: 90%;
+}
+
+#content_1 img {
+    align-self: center;
+    justify-self: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40%;
+    z-index: 11;
+    border-radius: 50%;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .9);
+}
+
+#content_1 article {
+    align-self: center;
+    justify-self: center;
+}
+
+#content_1 h2 {
+    font-size: 55px;
+    line-height: 62px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    color: #ffb400;
+    padding-left: 70px;
+}
+
+#content_1 h2::before {
+    content: " ";
+    display: block;
+    position: relative;
+    left: -70px;
+    top: 34px;
+    padding: 2px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: #ffb400;
+}
+
+#content_1 article h2 .work {
+    display: block;
+    color: #fff;
+}
+
+#content_1 article p {
+    font-size: 24px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+
+/************* Teaching *************/
+#content_4 section {
+    grid-column: span 2;
+}
+
+@media only screen and (max-width: 1024px) {
+    .content--center {
+        display: inline-block;
+        width: 80%;
+    }
+
+    .content > .content-container {
+        height: auto;
+    }
+
+    .dd-wrapper {
+        display: block;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-container h1 {
+        font-size: 40px;
+        text-align: justify;
+    }
+
+    .content--center h1 {
+        letter-spacing: 5px;
+    }
+
+    .content--center section ul {
+        list-style: none;
+    }
+
+    .content--center section ul li:before {
+        content: "-";
+    }
+
+    #content_1, #content_2, #content_3, #content_4, #content_5 {
+        width: 100%;
+        margin: 0;
+    }
+
+    #content_1 {
+        background: linear-gradient(195deg, #ffb400 0%, #ffb400 25%, #ffb400 5%, #111 25%, #111 100%);
+    }
+
+    #content_1 h2 {
+        font-size: 40px;
+        line-height: 31px;
+        padding: 0;
+        text-align: center;
+    }
+
+    #content_1 h2::before {
+        display: none;
+    }
+
+    #content_1 img {
+        text-align: center;
+        max-width: 80%;
+        height: auto;
+        margin-top: 15%;
+    }
+
+    #content_1 article {
+        align-self: auto;
+    }
+
+    #content_1 article p {
+        font-size: 22px;
+        text-align: justify;
+    }
+
+    #content_2 .content--center, #content_3 .content--center, #content_4 .content--center {
+    }
+
+    #content_3 .content--center section, #content_4 .content--center section, .contact, .experience-block p {
+        text-align: left;
+    }
+
+    .content--center form {
+        column-gap: 5px;
+    }
+
+
+}

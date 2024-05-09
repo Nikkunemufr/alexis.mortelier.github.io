@@ -1,0 +1,9 @@
+#lang-select input {
+    height: 30px;
+}
+
+#lang-select {
+    position: fixed;
+    top:0;
+    right: 0;
+}

@@ -1,0 +1,56 @@
+
+/************* Experience block *************/
+.experience-block {
+    padding-left: 15%;
+}
+
+.experience-block h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.experience-block h3 .place {
+    opacity: .8;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.experience-block > span {
+    font-size: 13px;
+    width: 20%;
+    background: #252525;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.experience-block p {
+    color: white;
+    line-height: 18px;
+}
+
+.experience-block i {
+    position: relative;
+    font-size: 20px;
+    float: left;
+    line-height: 50px;
+    border-radius: 30px;
+    margin: -5px -65px;
+    background: #ffb400;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.experience-block i::after {
+    display: block;
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 100%;
+    width: 1px;
+    background: #343232;
+    height: 120%;
+}
+
